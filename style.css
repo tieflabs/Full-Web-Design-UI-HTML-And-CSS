@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+/*root for all colors */
+:root{
+	--ex: #7f9d3d;
+	--bg: #9aa87b;
+	--nbg: #1a2600;
+	--clr: #ffff;
+	--nclr: #716f71;
+}
+/*hero section*/
+.hero{
+	position: absolute;
+	height: 77vh;
+	width: 100%;
+	background: var(--bg);
+}
+nav{
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	align-items: center;
+	justify-content: inherit;
+}
+nav .logo{
+	color: var(--clr);
+	font-size: 44px;
+	font-weight: 800;
+	margin: 40px 44px;
+}
+nav ul{
+	display: flex;
+	float: right;
+	margin-right: 10px;
+}
+nav ul li{
+	list-style: none;
+	margin: 20px 10px;
+	padding: 5px 15px;
+}
+nav ul li a{
+	font-size: 17px;
+	color: var(--clr);
+	text-decoration: none;
+	font-weight: 600;
+}
+.active{
+	border-radius: 20px;
+	font-size: 20px;
+	background: var(--nbg);
+	padding: 4px 15px;
+}
+/*customize scrollber*/
+body::-webkit-scrollbar{
+	width: 0.8em;
+}
+body::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px var(--ex);
+}
+body::-webkit-scrollbar-thumb{
+	background: var(--nbg);
+	border-radius: 50px;
+}
+/*content for hero*/
+h1{
+	position: absolute;
+	color: var(--clr);
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin: 8% 44px;
+}
+p{
+	position: absolute;
+	color: var(--clr);
+	font-size: 18px;
+	margin: 23% 44px;
+}
+.button{
+	position: absolute;
+	/*background: black;*/
+	top: 80%;
+	left: 2.44%;
+	margin: 1% 2px;
+}
+.btn_active,.btn{
+	padding: 13px 45px;
+	color: var(--clr);
+	border-radius: 50px;
+	margin: 15px;
+	border: 2px solid var(--clr);
+	text-decoration: none;
+}
+.btn_active,.btn:hover{
+	background: var(--nbg);
+	border: 2px solid var(--nbg);
+}
+.pictures{
+	transform: translate( 370%, 70%);
+}
+/*section*/
+section{
+	position: absolute;
+	top: 76%;
+	height: 130vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.Furniture{
+	position: absolute;
+	height: 640px;
+	width: 640px;
+	transform: translate(97%, -44%);
+}
+/*content box*/
+.contant{
+	margin-top: 24%;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+}
+.box{
+	height: 100%;
+	width: 300px;
+	margin: 20px 60px;
+	background: var(--bg);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.imgs{
+	position: absolute;
+	height: 300px;
+	width: 240px;
+	bottom: 40%;
+}
+h3{
+	font-size: 20px;
+	text-align: center;
+	transform: translateY(120px);
+}
+span{
+	position: relative;
+	bottom: 0;
+}
